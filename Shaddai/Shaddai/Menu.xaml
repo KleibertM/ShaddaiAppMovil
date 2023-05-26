@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shaddai.Menu"
+             Title="Menu">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#C39BD3">
+            <StackLayout Orientation="Vertical" Margin="20,10,0,0" >
+                <StackLayout>
+                    <Label Text="Shaddai" FontSize="26" TextColor="White" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/128/25/25694.png" HeightRequest="40"
+                         BackgroundColor="Transparent" Clicked="btnIni_Clicked"  />
+                    <Button Text="inicio" x:Name="btnIni" 
+                        BackgroundColor="Transparent" Clicked="btnIni_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Clicked="btnPerf_Clicked"  Source="https://static-00.iconduck.com/assets.00/person-crop-circle-fill-icon-256x256-5w37sorx.png" HeightRequest="40"
+                         BackgroundColor="Transparent"  />
+                    <Button Text="Perfil" x:Name="btnPerf" 
+                        BackgroundColor="Transparent" Clicked="btnPerf_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="https://static.thenounproject.com/png/849048-200.png" HeightRequest="40"
+                         BackgroundColor="Transparent" Clicked="btnGen_Clicked" />
+                    <Button Text="Catalogo General" x:Name="btnGen" 
+                        BackgroundColor="Transparent"  Clicked="btnGen_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="https://i.pinimg.com/originals/0a/be/bb/0abebbc088a214272122430202889f2e.png" HeightRequest="40" BackgroundColor="Transparent" Clicked="btnDam_Clicked"/>
+                    <Button Text="Damas" x:Name="btnDam"
+                        BackgroundColor="Transparent" Clicked="btnDam_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="https://academico.tes.edu.ec/static/images/iconos/hombre.png" HeightRequest="40"  BackgroundColor="Transparent " Clicked="btnCab_Clicked" />
+                    <Button Text="Caballeros" x:Name="btnCab"
+                        BackgroundColor="Transparent" Clicked="btnCab_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/512/42/42978.png" HeightRequest="40"  BackgroundColor="Transparent" Clicked="btnNiñ_Clicked"  />
+                    <Button Text="Niños" x:Name="btnNiñ"
+                        BackgroundColor="Transparent" Clicked="btnNiñ_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Clicked="btnBol_Clicked"  Source="https://icon-library.com/images/small-book-icon/small-book-icon-24.jpg" HeightRequest="40" BackgroundColor="Transparent" />
+                    <Button Text="Bolsillo" x:Name="btnBol" 
+                        BackgroundColor="Transparent" Clicked="btnBol_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Clicked="btnCar_Clicked"  Source="https://cdn-icons-png.flaticon.com/512/4893/4893201.png" HeightRequest="40" BackgroundColor="Transparent" />
+                    <Button Text="Carrito" x:Name="btnCar" 
+                        BackgroundColor="Transparent" Clicked="btnCar_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="https://es.seaicons.com/wp-content/uploads/2015/11/Programming-Help-icon.png" HeightRequest="40" BackgroundColor="Transparent" />
+                    <Button Text="Ayuda" x:Name="btnAyu" 
+                        BackgroundColor="Transparent" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="5,0,0,0" >
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/128/660/660350.png" HeightRequest="35" BackgroundColor="Transparent" />
+                    <Button Text="Cerrar Seccion" x:Name="btnCerr" BackgroundColor="Transparent" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

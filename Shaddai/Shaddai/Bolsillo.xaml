@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shaddai.Bolsillo"
+             Title="Bolsillo">
+    <ScrollView>
+        <Grid Padding="20" RowSpacing="5" ColumnSpacing="5" BackgroundColor="#D0D3D4 ">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+
+            <ScrollView Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="0">
+                <Grid Grid.ColumnSpan="2" Grid.Row="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="0.25*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button TextColor="Black" Text="Todo" x:Name="catRopa" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" />
+                    <Button TextColor="Black" Text="Damas" x:Name="catPerf" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Caballero" x:Name="catJug" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Niños" x:Name="catComp"  Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40"/>
+                    
+
+                </Grid>
+            </ScrollView>
+
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="1" Grid.Column="0" >
+                <StackLayout>
+                    <Image Source="https://sbp.org.pe/wp-content/uploads/2020/08/Biblia-9781598771244-4-scaled.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="1" Grid.Column="1">
+                <StackLayout >
+                    <Image Source="https://tienda.sbch.cl/wp-content/uploads/103252-1-2.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="2" Grid.Column="0" >
+                <StackLayout>
+                    <Image Source="https://tienda.sbch.cl/wp-content/uploads/5cbf551c1f7ce262233472.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="2" Grid.Column="1" >
+                <StackLayout >
+                    <Image Source="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/337/products/biblia-3-11-12fba5ef886fff770916491932913671-640-0.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="3" Grid.Column="0" >
+                <StackLayout>
+                    <Image Source="https://sbp.org.pe/wp-content/uploads/2020/08/Biblia-9781598771244-4-scaled.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="3" Grid.Column="1">
+                <StackLayout >
+                    <Image Source="https://tienda.sbch.cl/wp-content/uploads/103252-1-2.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="4" Grid.Column="0" >
+                <StackLayout>
+                    <Image Source="https://tienda.sbch.cl/wp-content/uploads/5cbf551c1f7ce262233472.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="4" Grid.Column="1" >
+                <StackLayout >
+                    <Image Source="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/337/products/biblia-3-11-12fba5ef886fff770916491932913671-640-0.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/59.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>

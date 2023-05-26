@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Xamd.ImageCarousel.Forms.Plugin.Abstractions;assembly=Xamd.ImageCarousel.Forms.Plugin.Abstractions"
+             x:Class="Shaddai.Ctlg"
+             Title="Shaddai">
+    <ScrollView Orientation="Vertical">
+        <Grid Padding="10,0,10,0" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" /> 
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+                <controls:ImageCarousel x:Name="imgSlider" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <ScrollView Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10" VerticalScrollBarVisibility="Always" >
+                <StackLayout >
+                    <Label Text="¡Bienvenido a nuestra página web de ventas de Biblias Reina Valera!" TextColor="Black"  BackgroundColor="White" FontSize="16" />
+                    <Label Text="Nos complace ofrecerte una amplia selección de Biblias Reina Valera, una de las traducciones más reconocidas y apreciadas en el mundo de habla hispana. "
+                       TextColor="Black"  BackgroundColor="White" FontSize="14"/>
+                </StackLayout>
+            </ScrollView>
+
+
+            <StackLayout Grid.Row="3" Grid.ColumnSpan="2">
+                <controls:ImageCarousel x:Name="imgSliders" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <ScrollView  Grid.Row="4" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10" VerticalScrollBarVisibility="Always">
+                <StackLayout >
+                    <Label Text="Biblias Reina Valera " TextColor="Black"  BackgroundColor="White" FontSize="16" />
+                    <Label Text="Valoramos la calidad y la autenticidad, por lo que te garantizamos que todas nuestras Biblias son productos cuidadosamente seleccionados de editoriales reconocidas, asegurando su precisión y fidelidad a los textos originales." 
+                       TextColor="Black"  BackgroundColor="White" FontSize="14"/>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout Grid.Row="5" Grid.Column="0" >
+                <Label Text="Productos" TextColor="Black" FontAttributes="Bold" FontSize="26" />
+            </StackLayout>
+            
+            <ScrollView Grid.Row="6"  Grid.ColumnSpan="2" Orientation="Horizontal" BackgroundColor="AliceBlue" HorizontalScrollBarVisibility="Always" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="#EBEDEF" Padding="5"  >
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://http2.mlstatic.com/D_NQ_NP_766064-MPE42829458066_072020-O.jpg"  HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2021/03/Biblia-9781576970065-4.jpg"  HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://tiendadelabiblia.com/pub/media/catalog/product/cache/43f859ebd2c651a4edd62fedb84060e8/d/i/dise_o_sin_t_tulo_2.jpg"  HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/337/products/bib-rosa065flor-211-5202859f41355f564316398056521208-640-0.jpg"   HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2022/08/9789587456318.jpg"   HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2020/06/Biblia-7899938409664-4.jpg"   HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2021/07/Biblia-9781598777178.png"   HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10" >
+                        <StackLayout >
+                            <ImageButton Source="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/337/products/biblia-31-5cda3174f2f1301c0716474607996708-640-0.jpg"  HeightRequest="80" WidthRequest="80" Scale="1.8" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout Grid.Row="7" Grid.ColumnSpan="2" >
+                <Label Text="Productos" TextColor="Black" FontAttributes="Bold" FontSize="26" HorizontalOptions="Center" />
+            </StackLayout>
+            <ScrollView  Grid.Row="8"  Grid.ColumnSpan="2"  Orientation="Vertical" BackgroundColor="AliceBlue">
+                <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="160" />
+                        <RowDefinition Height="160" />
+                        <RowDefinition Height="160" />
+                        <RowDefinition Height="160" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+
+                            <Frame  CornerRadius="10" Grid.Column="0" Grid.Row="0" >
+                                <StackLayout >
+                                    <ImageButton Source="https://http2.mlstatic.com/D_NQ_NP_766064-MPE42829458066_072020-O.jpg"  
+                                                 HeightRequest="80" WidthRequest="80" Scale="1.8"/>
+                                </StackLayout>
+                            </Frame>
+                    <Frame  CornerRadius="10" Grid.Column="0" Grid.Row="0" >
+                                <StackLayout >
+                                    <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2021/03/Biblia-9781576970065-4.jpg"  Scale="1.5" />
+                                </StackLayout>
+                            </Frame>
+                    <Frame  CornerRadius="10"  Grid.Column="1" Grid.Row="0">
+                                <StackLayout >
+                            <ImageButton Source="https://tiendadelabiblia.com/pub/media/catalog/product/cache/43f859ebd2c651a4edd62fedb84060e8/d/i/dise_o_sin_t_tulo_2.jpg" Scale="1.5"  />
+                                </StackLayout>
+                            </Frame>
+                    <Frame  CornerRadius="10"  Grid.Column="0" Grid.Row="1" >
+                                <StackLayout >
+                            <ImageButton Source="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/337/products/bib-rosa065flor-211-5202859f41355f564316398056521208-640-0.jpg"   Scale="1.5"  />
+                                </StackLayout>
+                            </Frame>
+                    <Frame  CornerRadius="10"  Grid.Column="1" Grid.Row="1">
+                                <StackLayout >
+                            <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2022/08/9789587456318.jpg" Scale="1.5"  />
+                                </StackLayout>
+                            </Frame>
+                    <Frame  CornerRadius="10" Grid.Column="0" Grid.Row="2" >
+                                <StackLayout >
+                            <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2020/06/Biblia-7899938409664-4.jpg" Scale="1.5" />
+                                </StackLayout>
+                            </Frame>
+                    <Frame  CornerRadius="10"  Grid.Column="1" Grid.Row="2">
+                                <StackLayout >
+                            <ImageButton Source="https://sbp.org.pe/wp-content/uploads/2021/07/Biblia-9781598777178.png" Scale="1.5" />
+                                </StackLayout>
+                            </Frame>
+                    <Frame  CornerRadius="10"  Grid.Column="0" Grid.Row="3">
+                        <StackLayout >
+                            <ImageButton Source="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/337/products/biblia-31-5cda3174f2f1301c0716474607996708-640-0.jpg"  Scale="1.5" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  CornerRadius="10"  Grid.Column="1" Grid.Row="3" HeightRequest="80">
+                        <StackLayout >
+                            <ImageButton Source="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/337/products/biblia-31-5cda3174f2f1301c0716474607996708-640-0.jpg"  Scale="1.5" />
+                        </StackLayout>
+                    </Frame>
+
+                </Grid>
+            </ScrollView>
+
+            <StackLayout Grid.Row="9" Grid.ColumnSpan="2" BackgroundColor="#F2F3F4 " Padding="10" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/3082/3082383.png" HeightRequest="15" />
+                    <Label Text="Manuel gonzales prada 877, Los Olivos." TextColor="Black"  HorizontalOptions="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/46/46854.png" HeightRequest="15" />
+                    <Label Text="+51 943 870 578" TextColor="Black"  HorizontalOptions="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/726/726569.png" HeightRequest="15" />
+                    <Label Text="Atencion de Lunes a Domingos" TextColor="Black"  HorizontalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+    </ScrollView>
+</ContentPage>

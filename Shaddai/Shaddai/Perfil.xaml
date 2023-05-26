@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shaddai.Perfil"
+             Title="Perfil de Usuario">
+    <Grid Padding="20" Margin="15" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240" />
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" Grid.Row="0" Grid.ColumnSpan="2" />
+        <Label Text="Nombre:" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" FontAttributes="Bold"  FontSize="22" VerticalOptions="Center"/>
+        <Entry x:Name="nomUser" Placeholder="Kleibert Medina" Grid.Row="1" Grid.Column="1" IsEnabled="False" />
+
+        <Label Text="Correo: " Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" FontAttributes="Bold"  FontSize="16" VerticalOptions="Center"/>
+        <Entry  Placeholder="Kleibert Medina" Grid.Row="2" Grid.Column="1" IsEnabled="False" />
+
+        <Label Text="Movil: " Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" FontAttributes="Bold"  FontSize="16" VerticalOptions="Center"/>
+        <Entry Placeholder="Kleibert Medina" Grid.Row="3" Grid.Column="1" IsEnabled="False" />
+
+        <Label Text="Usuario: " Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" FontAttributes="Bold"  FontSize="16" VerticalOptions="Center"/>
+        <Entry  Placeholder="Kleibert Medina" Grid.Row="4" Grid.Column="1" IsEnabled="False" />
+    </Grid>
+</ContentPage>
