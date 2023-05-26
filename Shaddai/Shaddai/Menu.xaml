@@ -61,6 +61,10 @@
                     <ImageButton Source="https://cdn-icons-png.flaticon.com/128/660/660350.png" HeightRequest="35" BackgroundColor="Transparent" />
                     <Button Text="Cerrar Seccion" x:Name="btnCerr" BackgroundColor="Transparent" />
                 </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="5,0,0,0" >
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/256/962/962669.png" HeightRequest="35" BackgroundColor="Transparent" Clicked="btnAdd_Clicked"/>
+                    <Button Text="Agg Producto" x:Name="btnAdd" BackgroundColor="Transparent" Clicked="btnAdd_Clicked" />
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

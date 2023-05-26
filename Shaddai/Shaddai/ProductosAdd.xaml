@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Shaddai"
+             x:Class="Shaddai.ProductosAdd"
+             Title="Registrar Producto">
+    <StackLayout BackgroundColor="White" >
+        <StackLayout>
+            <Frame  BackgroundColor="Black" Opacity=".6" Margin="10,10,10,0" BorderColor="LightBlue" CornerRadius="10">
+                <StackLayout >
+                    <Entry x:Name="idItem" IsVisible="False"/>
+                    <Entry x:Name="Nombre" Placeholder="Nombre" PlaceholderColor="White" TextColor="White" FontSize="18"/>
+                    <Entry x:Name="tVersion" Placeholder="Version" PlaceholderColor="White" TextColor="White" FontSize="18"/>
+                    <Entry x:Name="Precio" Placeholder="Precio" PlaceholderColor="White" TextColor="White" FontSize="18" Keyboard="Numeric"/>
+                    <Entry x:Name="Descrip" Placeholder="Descripcion" PlaceholderColor="White"  TextColor="White" FontSize="18"/>
+                    <Picker x:Name="Categ" Title="Categoria">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Dama</x:String>
+                                <x:String>Caballero</x:String>
+                                <x:String>Niño</x:String>
+                                <x:String>Bolsillo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Picker x:Name="letraPicker" Title="Tipo de Letra">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Letra Normal</x:String>
+                                <x:String>Letra Grande</x:String>
+                                <x:String>Letra Enorme</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Button x:Name="btnRegis" Text="Registrar"  Margin="10,0,10,0" 
+                            BackgroundColor="ForestGreen" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnRegis_Clicked" />
+                    <Button x:Name="btnActua" Text="Actualizar"   IsVisible="False" 
+                            BackgroundColor="ForestGreen" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnActua_Clicked"/>
+                    <Button x:Name="btnElimi" Text="Eliminar"  IsVisible="False" 
+                            BackgroundColor="Red" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnElimi_Clicked" />
+                </StackLayout>
+            </Frame>
+            <ListView x:Name="listProductos" ItemSelected="listProductos_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid BackgroundColor="Gray" Padding="5,0,5,0" >
+                                <Grid.RowDefinitions >
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding IdItem}" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                                <Label Text="{Binding Nom}" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" />
+                                <Label Text="{Binding Version}" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" />
+                                <Label Text="{Binding Precio}" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" />
+                                <Label Text="{Binding Descrip}" Grid.Row="1" Grid.Column="1"
+                                       TextColor="LightBlue" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Text="{Binding Categoria}" Grid.Row="1" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" />
+                                <Label Text="{Binding Letra}" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+            
+</ContentPage>

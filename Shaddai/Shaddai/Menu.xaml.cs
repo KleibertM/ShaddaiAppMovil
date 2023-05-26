@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shaddai;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -64,6 +65,12 @@ namespace Shaddai
         {
             App.MasterDet.IsPresented = false;
             await App.MasterDet.Detail.Navigation.PushAsync(new Perfil());
+        }
+
+        private async void btnAdd_Clicked(object sender, EventArgs e)
+        {
+            App.MasterDet.IsPresented = false;
+            await App.MasterDet.Detail.Navigation.PushAsync(new ProductosAdd());
         }
     }
 }

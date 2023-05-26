@@ -4,7 +4,8 @@
              x:Class="Shaddai.Bolsillo"
              Title="Bolsillo">
     <ScrollView>
-        <Grid Padding="20" RowSpacing="5" ColumnSpacing="5" BackgroundColor="#D0D3D4 ">
+        <Grid Padding="20" RowSpacing="5" ColumnSpacing="5" BackgroundColor="#D0D3D4 "
+               x:Name="listProductos" ItemSelected="listProductos_ItemSelected">
             <Grid.RowDefinitions>
                 <RowDefinition Height="40" />
                 <RowDefinition Height="Auto" />
@@ -35,7 +36,7 @@
             <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="1" Grid.Column="0" >
                 <StackLayout>
                     <Image Source="https://sbp.org.pe/wp-content/uploads/2020/08/Biblia-9781598771244-4-scaled.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
-                    <Label TextColor="Black" Text="Biblia" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="{Binding Nom}"  FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
                     <Label TextColor="Black" Text="Reina Valera 1960"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
                     <Label TextColor="Black" Text="Bolsillo"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
                     <Label TextColor="Green" FontAttributes="Bold" Text="S/29.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />

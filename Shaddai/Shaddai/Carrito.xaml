@@ -2,24 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Shaddai.Carrito" Title="Carrito de Compras">
-    <Grid Padding="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="20">
+            <Label Text="Producto en la Bolsa" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
 
-        <Label Text="Articulos en Carrito:" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.ColumnSpan="2" />
+            <ListView x:Name="carritoListView"
+                      ItemsSource="{Binding CarritoItems}"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="{Binding Nombre}" FontSize="16" HorizontalOptions="StartAndExpand" />
+                                <Label Text="{Binding Precio}" FontSize="16" HorizontalOptions="End" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-        <Label BackgroundColor="White" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.ColumnSpan="4" />
-        <Image Source="https://www.aquedah.com/shared/img/public/shopping-icon250.png"  Grid.Row="1" Grid.Column="3" HeightRequest="35" />
-        <Image Source="https://cdn-icons-png.flaticon.com/128/1170/1170628.png"  Grid.Row="1" Grid.Column="0" HeightRequest="35" />
-        <Image Source="https://cdn-icons-png.flaticon.com/512/126/126073.png"  Grid.Row="1" Grid.Column="2" HeightRequest="35" />
-        <Image Source="https://images.vexels.com/media/users/3/141864/isolated/lists/f2a4ed539ed068acaeff583709e757d6-cantidad-de-luz-de-exposicion.png"  Grid.Row="1" Grid.Column="1" HeightRequest="35" />
-    </Grid>
+            <Button Text="Realizar Pago" HorizontalOptions="Center" />
+
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
